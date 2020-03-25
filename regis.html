@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>from</title>
+</head>
+<body>
+<h3>Assaignment</h3>
+<form method="POST" action="regischeck.php">
+<table border="1">
+	<tr>
+		<td colspan="3"><center>Personal profile</center></td>
+	</tr>
+	<tr>
+		<td>Name</td>
+		<td><input id="n" type="text" name="uname" value="" onchange="f1()" /><br> <p id="msg"></p></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td><input id="e" type="text" name="uemail" value="" onchange="f2()" /><br> <p id="mssg"></p></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Gender</td>
+		<td>
+			<input type="radio" name="ugender" value="Male">Male
+			<input type="radio" name="ugender" value="Female">Female
+			<input type="radio" name="ugender" value="others">others
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Date of Birth</td>
+		<td>
+			<input type="text" name="day" value="">
+			<input type="text" name="month" value="">
+			<input type="text" name="year" value="">
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+	<td>Blood Group</td>
+	<td>
+		<select name="blood" id="blood">
+			<option>A+</option>
+			<option>B+</option>
+			<option>A-</option>
+		</select>
+	</td>
+	<td></td>
+	</tr>
+	<tr>
+		<td>Degree</td>
+		<td>
+			<input type="checkbox" name="degree" value="SSC">SSC
+			<input type="checkbox" name="degree" value="HSC">HSC
+			<input type="checkbox" name="degree" value="BSC">BSC
+			<input type="checkbox" name="degree" value="MSC">MSC
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Photos</td>
+		<td>
+			<input type="file" name="file" value="">
+		</td>
+		<td></td>
+	</tr>
+	<tr height=19>
+		<td colspan="3">
+			
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" align="right">
+	<input type="submit" name="submit" value="submit" ><!--onclick="f1()">-->
+	<input type="reset" name="reset" value="reset">
+	</td>
+	</tr>
+</table>
+</form>
+<script>
+	function f1(){
+			var n = document.getElementById('n').value;
+			/*if(n == ""){
+				document.getElementById('msg').innerHTML = "null submission";
+			}else{
+				document.getElementById('msg').innerHTML = "Ok";
+			}*/
+			document.getElementById('msg').innerHTML = n;
+		}
+function f2(){
+			var e = document.getElementById('e').value;
+			/*if(n == ""){
+				document.getElementById('msg').innerHTML = "null submission";
+			}else{
+				document.getElementById('msg').innerHTML = "Ok";
+			}*/
+			document.getElementById('mssg').innerHTML = e;
+		}
+
+
+
+
+
+	</script>
+</body>
+</html>
